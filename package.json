@@ -1,5 +1,6 @@
 {
-  "name": "my-first-react-proj",
+  "homepage": "http://mscafate.github.io/to-do-list",
+  "name": "to-do-list",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -11,8 +12,11 @@
     "react-scripts": "4.0.3",
     "uuid": "^8.3.2",
     "web-vitals": "^1.1.2"
+    
   },
   "scripts": {
+    "predeploy": "nom run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
